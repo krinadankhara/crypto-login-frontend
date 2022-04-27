@@ -4,6 +4,13 @@ import { connect } from 'react-redux';
 
 import { userActions } from '../_actions';
 
+const Nav = {
+  background: '#63D471',
+  height: 85,
+  display: 'flex',
+  justifyContent: 'space-between',
+  };
+
 class HomePage extends React.Component {
     componentDidMount() {
         this.props.getUsers();
@@ -36,9 +43,21 @@ class HomePage extends React.Component {
                         )}
                     </ul>
                 }
+
                 <p>
-                    <Link to="/login">Logout</Link>
+                <Link to="/StockAPI">Stock API</Link>
                 </p>
+
+                <p>
+                <Link to="/CurrencyConversion">Currency Conversion</Link>
+                </p>
+
+                <p>
+                <Link to="/login">Logout</Link>
+                </p>
+
+
+
             </div>
         );
     }
@@ -57,3 +76,4 @@ const actionCreators = {
 
 const connectedHomePage = connect(mapState, actionCreators)(HomePage);
 export { connectedHomePage as HomePage };
+

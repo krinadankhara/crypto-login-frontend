@@ -9,6 +9,9 @@ import { HomePage } from '../HomePage';
 import { LoginPage } from '../LoginPage';
 import { RegisterPage } from '../RegisterPage';
 import { StockPage } from '../StockPage';
+import { CurrencyConversion } from '../CurrencyConversion';
+
+
 
 
 class App extends React.Component {
@@ -35,7 +38,8 @@ class App extends React.Component {
                                 <PrivateRoute exact path="/" component={HomePage} />
                                 <Route path="/login" component={LoginPage} />
                                 <Route path="/register" component={RegisterPage} />
-                                <Route path="/StockAPI" component={StockPage}/>
+                                <Route path="/StockAPI" component={StockPage} />
+                                <Route path="/CurrencyConversion" component={CurrencyConversion} />
                                 <Redirect from="*" to="/" />
                             </Switch>
                         </Router>

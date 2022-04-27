@@ -1,6 +1,52 @@
 import React, { useState, useEffect } from 'react';
 import Coin from './Coin.jsx';
 import axios from "axios";
+
+const team3 = {
+   backgroundImage: 'linear-gradient(to bottom right, #000000,#923CB5)',
+	marginLeft: -550,
+	marginRight: 100,
+	marginTop: -100,
+	marginBottom: 0,
+	Left: 0,
+	position: 'relative',
+	fontFamily: 'sans-serif',
+	backgroundColor: '#1a1a1c',
+// 	color: '#fff',
+	width: 1850,
+};
+const coinApp = {
+
+	marginTop: 64,
+	marginLeft: 50,
+	marginRight: -100,
+	width: 1700,
+	color: '#fff',
+};
+
+const coinSearch = {
+	marginBottom: 64,
+	/* display: flex;
+	flex-direction: column; */
+	/* justify-content: center; */
+	/* align-items: center; */
+	textAlign: 'center',
+};
+
+const coinText = {
+	marginBottom: 32,
+	textAlign: 'center'
+};
+
+const coinInput = {
+	paddingLeft: 16,
+	width: 300,
+	height: 50,
+	borderRadius: 4,
+	backgroundImage: 'linear-gradient(to bottom right, black, grey)',
+};
+
+
 function StockPage() {
 	const [coins, setCoins] = useState([]);
 	const [search, setSearch] = useState('');
@@ -25,15 +71,15 @@ function StockPage() {
 	);
 
 	return (
-		<div className="janvi">
-		<div className="container coin-app">
-			<div className="coin-search">
+		<div style={team3} className="container-fluid janvi">
+		<div style = {coinApp} className="container coin-app">
+			<div style = {coinSearch} className="coin-search">
 				<div className="row">
-					<h1 className="col-md-12 coin-text">Search a Currency</h1>
+					<h1 style = {coinText} className="col-md-12 coin-text">Search a Currency</h1>
 				</div>
 				<form>
-					<input
-						placeholder="Search"
+					<input style = {coinInput}
+						 placeholder="Search"
 						className="coin-input"
 						onChange={handleChange}
 					/>

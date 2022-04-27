@@ -1,0 +1,267 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.container-fluid{
+ 
+  padding: 0;
+  text-align: center;
+ }
+
+ .ro{
+   height: 900px;
+       margin-right:0!important;
+  margin-left:0!important;
+  background-image: url('./stock1.jpg');
+
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+
+
+.App-link {
+  color: #61dafb;
+}
+.section-1-img{
+  margin-top:5.5rem;
+  width:50rem;
+}
+.text-container{
+  text-align: right;
+  margin-top: 9rem;
+}
+
+
+
+
+.text{
+  margin-top: 20%;
+    color: white;
+}
+
+.text2 {
+  font-family: Candara;
+  font-size: 29px;
+  color: white
+}
+.text1 {
+  text-align: left;
+  padding-top:4%;
+  font-family: Candara;
+  color: white
+}
+
+.column{
+  margin-top: 3%;
+  float: left;
+  width: 50%;
+  height: 300px; /* Should be removed. Only for demonstration */
+  width: 50%;
+  height: 510px;
+}
+.column3{
+  margin-top: 6%;
+  float: left;
+  background-color:#b3b3cc;
+
+}
+
+.column1 {
+  margin-top: 10%;
+  float: right;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  height: 510px;
+}
+.column2 {
+  margin-top: 10%;
+  float: right;
+  width: 100%;
+  padding: 10px;
+ height: 100%;
+
+  background-color: blue;
+}
+  
+
+
+/* text-shadow: 2px 2px 5px red; */
+.header{
+color: #b3ffff;
+font-size: 75px;
+font-weight: bold;
+align-items: center;
+font-family: "Trirong", serif;
+
+}
+.subheader{
+  color:#b3ffff;
+  font-size: 29px;
+  font-weight: bold;
+  font-family: "Trirong", serif;
+
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media(max-width:768px){
+  .section-1-img{
+        margin-top: 1rem;
+
+    width:30rem;
+  }
+  .text-container{
+    text-align: left;
+    margin-top:1rem
+  }
+}
+@media(max-width:1280px){
+  .text-container{
+
+    margin-top:1rem
+  }
+
+}
+
+
+.hclass2 {
+width: 100%;
+padding-right: 2%;
+
+}
+.hclass1{
+width: 100%;
+padding-left: 2%;
+}
+
+.hclass1 {
+animation: right_to_left 3s ease;
+}
+
+.hclass2 {
+text-align: right;
+animation: left_to_right 3s ease;
+}
+
+@keyframes right_to_left {
+from {
+  margin-left: 100%;
+}
+to {
+  margin-left: 0;
+}
+}
+
+@keyframes left_to_right {
+from {
+  margin-left: -100%;
+}
+to {
+  margin-left: 0;
+}
+}
+
+.textcolor{
+color: white;
+}
+
+.okay{
+color: white;
+}
+.new{
+margin-right: 300%;
+color: white;
+text-align: left;
+}
+@media (min-width: 500px) and (max-width:750px) {
+.column{
+  
+  float: left;
+  width: 30%;
+  height: 200px; /* Should be removed. Only for demonstration */
+  width: 50%;
+  height: 310px;
+
+}
+.hclass2 {
+  width: 90%;
+}
+
+.subheader{
+  color:#b3ffff;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: "Trirong", serif;
+}  
+.header{
+  color: #b3ffff;
+  font-size: 35px;
+  
+    
+
+}
+.column1 {
+margin-top: 10%;
+float: right;
+width: 50%;
+
+height: 300px; /* Should be removed. Only for demonstration */
+height: 510px;
+}
+
+@keyframes right_to_left {
+from {
+  margin-left: 40%;
+}
+to {
+  margin-left: 0;
+}
+}
+
+
+
+}
+
+@media (min-width: 250px) and (max-width:499px) {
+
+.ro {
+  height: 900px;
+  margin-right: 0!important;
+  margin-left: 0!important;
+  background-image: url(./stock1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: fit-content;
+}
+.subheader {
+color: #b3ffff;
+font-size: 15px;
+font-weight: bold;
+font-family: "Trirong", serif;
+}
+.header {
+color: #b3ffff;
+font-size: 15px;
+font-weight: bold;
+align-items: left;
+font-family: "Trirong", serif;
+
+
+}
+}
+
+
